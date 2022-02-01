@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Academia FAQ</string>
+    <!-- Global Variable Strings -->
+    <string name="base_url">https://course-questions-api.herokuapp.com/</string> <!-- The local host api "http://10.0.2.2:5000/" -->
+    <!-- Login UI Strings -->
+    <string name="fragment_login_header_1_text">Academia</string>
+    <string name="fragment_login_header_2_text">FAQ</string>
+    <string name="fragment_login_email_input_hint">Email</string>
+    <string name="fragment_login_password_input_hint">Password</string>
+    <string name="fragment_login_email_error_default_value">Wrong email</string>
+    <string name="fragment_login_password_error_default_value">Wrong password</string>
+    <string name="fragment_login_login_button_text">Login</string>
+    <string name="fragment_login_go_to_registration_button_text">Don\'t have an account? <u>Register here!</u></string>
+    <!-- Registration UI Strings -->
+    <string name="fragment_registration_header_text">Registration</string>
+    <string name="fragment_registration_username_input_hint">Username</string>
+    <string name="fragment_registration_username_error">Username is already taken!</string>
+    <string name="fragment_registration_email_input_hint">Email</string>
+    <string name="fragment_registration_email_error">Email is already registered!</string>
+    <string name="fragment_registration_password_input_hint">Password</string>
+    <string name="fragment_registration_password_confirmation_hint">Confirm Password</string>
+    <string name="fragment_registration_password_confirmation_error">Passwords do not match!</string>
+    <string name="fragment_registration_register_account_button_text">Register account</string>
+    <string name="fragment_registration_back_to_login_button_text">Already a member? <u>Login here!</u></string>
+    <!-- Profile UI Strings -->
+    <string name="fragment_profile_username_text">Username</string>
+    <string name="fragment_profile_id_text">User ID</string>
+    <string name="fragment_profile_email_text">Registered Email</string>
+    <string name="fragment_profile_token_text">Access Token</string>
+    <string name="fragment_profile_logout_button_text">Logout</string>
+    <!-- Recycler Question UI Strings -->
+    <string name="recycler_question_title_placeholder">This is a title question</string>
+    <string name="recycler_question_author_placeholder">Asked by User</string>
+    <string name="recycler_question_timestamp_placeholder">on Timestamp</string>
+    <string name="recycler_question_course_placeholder">AAAA00</string>
+    <string name="recycler_question_body_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel luctus mi. Curabitur rhoncus justo vel tellus sagittis blandit ac non quam. Vivamus elit dui, maximus pretium lorem at, luctus vehicula tortor. Fusce neque mauris, pulvinar vel turpis vitae, sagittis sagittis augue. Pellentesque consectetur, quam ut cursus eleifend, diam nisi euismod felis, id vestibulum nunc elit a leo. Vestibulum imperdiet convallis odio, vel tempor lacus malesuada vitae. Pellentesque et nisl blandit, viverra odio elementum, interdum massa. Aliquam pretium arcu non eros convallis luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel felis odio. Sed sit amet metus facilisis, pharetra dui eu, blandit turpis. Aliquam sit amet metus id urna gravida fermentum.</string>
+    <string name="recycler_question_like_button_text">Like</string>
+    <string name="recycler_question_likes_header">Likes:</string>
+    <string name="recycler_question_likes_placeholder">0</string>
+    <string name="recycler_question_answers_header">Answers:</string>
+    <string name="recycler_question_answers_placeholder">0</string>
+    <!-- Recycler User UI Strings -->
+    <string name="recycler_user_username_text">Username</string>
+    <string name="recycler_user_follow_button_text">Follow</string>
+    <!-- Recycler Answer UI Strings -->
+    <string name="recycler_answer_author_placeholder">Answered by User</string>
+    <string name="recycler_answer_timestamp_placeholder">on Timestamp</string>
+    <string name="recycler_answer_body_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel luctus mi. Curabitur rhoncus justo vel tellus sagittis blandit ac non quam. Vivamus elit dui, maximus pretium lorem at, luctus vehicula tortor. Fusce neque mauris, pulvinar vel turpis vitae, sagittis sagittis augue. Pellentesque consectetur, quam ut cursus eleifend, diam nisi euismod felis, id vestibulum nunc elit a leo. Vestibulum imperdiet convallis odio, vel tempor lacus malesuada vitae. Pellentesque et nisl blandit, viverra odio elementum, interdum massa. Aliquam pretium arcu non eros convallis luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel felis odio. Sed sit amet metus facilisis, pharetra dui eu, blandit turpis. Aliquam sit amet metus id urna gravida fermentum.</string>
+    <!-- Ask Question UI Strings -->
+    <string name="fragment_ask_question_header_text">Ask a course question</string>
+    <string name="fragment_ask_question_title_input_hint">Your question</string>
+    <string name="fragment_ask_question_title_error">You have to ask a question!</string>
+    <string name="fragment_ask_question_course_error">This course does not exist</string>
+    <string name="fragment_ask_question_description_input_hint">Elaborate your question (optional)</string>
+    <string name="fragment_ask_question_button_text">Ask question</string>
+    <!-- Question Details UI Strings -->
+    <string name="fragment_question_details_title_placeholder">This is a title question</string>
+    <string name="fragment_question_details_author_placeholder">Asked by User</string>
+    <string name="fragment_question_details_timestamp_placeholder">on Timestamp</string>
+    <string name="fragment_question_details_course_placeholder">AAAA00</string>
+    <string name="fragment_question_details_body_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel luctus mi. Curabitur rhoncus justo vel tellus sagittis blandit ac non quam. Vivamus elit dui, maximus pretium lorem at, luctus vehicula tortor. Fusce neque mauris, pulvinar vel turpis vitae, sagittis sagittis augue. Pellentesque consectetur, quam ut cursus eleifend, diam nisi euismod felis, id vestibulum nunc elit a leo. Vestibulum imperdiet convallis odio, vel tempor lacus malesuada vitae. Pellentesque et nisl blandit, viverra odio elementum, interdum massa. Aliquam pretium arcu non eros convallis luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel felis odio. Sed sit amet metus facilisis, pharetra dui eu, blandit turpis. Aliquam sit amet metus id urna gravida fermentum.</string>
+    <string name="fragment_question_details_like_button_text">Like</string>
+    <string name="fragment_question_details_likes_header">Likes:</string>
+    <string name="fragment_question_details_likes_placeholder">0</string>
+    <string name="fragment_question_details_answers_header">Answers:</string>
+    <string name="fragment_question_details_answers_placeholder">0</string>
+    <!-- Answer Question UI Strings -->
+    <string name="fragment_answer_question_header_text">Post your answer</string>
+    <string name="fragment_answer_question_body_input_hint">Your answer here</string>
+    <string name="fragment_answer_question_body_error">You have to answer something</string>
+    <string name="fragment_answer_question_button_text">Answer</string>
+    <string name="fragment_answer_question_go_to_question_details_button_text">Take me <u>back</u>!</string>
+    <!-- Main Activity Nav Strings -->
+    <string name="title_home">Home</string>
+    <string name="title_my_questions">My Questions</string>
+    <string name="title_users">Users</string>
+    <string name="title_profile">Profile</string>
+</resources>

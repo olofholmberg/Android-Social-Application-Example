@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_question_details_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/fragment_question_details_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fragment_question_details_scroll_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_question_details_title_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/fragment_question_details_title_placeholder"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fragment_question_details_author_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="@string/fragment_question_details_author_placeholder"
+                android:textColor="@color/colorPrimaryVariant"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_title_text_view" />
+
+            <TextView
+                android:id="@+id/fragment_question_details_timestamp_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:singleLine="true"
+                android:text="@string/fragment_question_details_timestamp_placeholder"
+                android:textColor="@color/colorOnSurface"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fragment_question_details_author_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_title_text_view" />
+
+            <TextView
+                android:id="@+id/fragment_question_details_course_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/fragment_question_details_course_placeholder"
+                android:textColor="@color/colorPrimaryVariant"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_author_text_view" />
+
+            <TextView
+                android:id="@+id/fragment_question_details_body_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/fragment_question_details_body_placeholder"
+                android:textColor="@color/colorOnSurface"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_course_text_view" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragment_question_details_like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/fragment_question_details_like_button_text"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_body_text_view" />
+
+            <TextView
+                android:id="@+id/fragment_question_details_likes_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:singleLine="true"
+                android:text="@string/fragment_question_details_likes_header"
+                android:textColor="@color/colorPrimaryVariant"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/fragment_question_details_recycler_view"
+                app:layout_constraintStart_toEndOf="@+id/fragment_question_details_like_button"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_body_text_view" />
+
+            <TextView
+                android:id="@+id/fragment_question_details_likes_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/fragment_question_details_likes_placeholder"
+                android:textColor="@color/colorOnSurface"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/fragment_question_details_recycler_view"
+                app:layout_constraintStart_toEndOf="@+id/fragment_question_details_likes_header"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_body_text_view" />
+
+            <TextView
+                android:id="@+id/fragment_question_details_answers_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:singleLine="true"
+                android:text="@string/fragment_question_details_answers_header"
+                android:textColor="@color/colorPrimaryVariant"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/fragment_question_details_recycler_view"
+                app:layout_constraintStart_toEndOf="@+id/fragment_question_details_likes_text_view"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_body_text_view" />
+
+            <TextView
+                android:id="@+id/fragment_question_details_answers_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/fragment_question_details_answers_placeholder"
+                android:textColor="@color/colorOnSurface"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/fragment_question_details_recycler_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fragment_question_details_answers_header"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_body_text_view" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_question_details_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorBackgroundRecycler"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_question_details_like_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/fragment_question_details_answer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_round_answer_question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

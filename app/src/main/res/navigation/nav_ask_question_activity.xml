@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_ask_question_activity"
+    app:startDestination="@id/navigation_ask_question">
+
+    <fragment
+        android:id="@+id/navigation_ask_question"
+        android:name="com.example.tddd80application.ui.askquestion.AskQuestionFragment"
+        android:label="fragment_ask_question"
+        tools:layout="@layout/fragment_ask_question" >
+    </fragment>
+
+</navigation>
